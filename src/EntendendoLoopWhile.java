@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class LoopWhile {
+public class EntendendoLoopWhile {
 
 	public static void main(String[] args) {
 		/*
 		 * Imagine que uma ONG precise saber a média de idades dos alunos de uma escola.
-		 * Sabendo de antemão quantos alunos existem e sem a necessidade de armazenar
+		 * Sabendo de antemão quantos alunos existem 5 e sem a necessidade de armazenar
 		 * permanentemente a idade de cada um desses alunos, qual é a melhor forma de
 		 * calcular essa média?
 		 */
@@ -13,22 +13,18 @@ public class LoopWhile {
 		Scanner leitor = new Scanner(System.in);
 		int idade, i = 0;
 		double media = 0;
-		int qtdealunos = 0;
 
-		System.out.println("Informe a quantidade de alunos da sala:");
-
-		qtdealunos = leitor.nextInt();
-
-		while (i < qtdealunos) {
+		while (i < 5) {
 			System.out.println("Informe a idade do " + (i + 1) + "º aluno:");
 			idade = leitor.nextInt();
 			media = media + idade;
 			i++;
+			// ou i+=1
 		}
 
 		leitor.close();
 
-		media = media / (double) qtdealunos;
+		media = media / 5.0;
 
 		System.out.println("A média de idades dos alunos é: " + media);
 
