@@ -10,7 +10,7 @@ public class ExercicioBonus07 {
 		 * da quantidade de feijões até que um cliente acerte.
 		 */
 
-		int qtdefeijao = 0, i = 0;
+		int qtdefeijao = 0;
 		Scanner leitor = new Scanner(System.in);
 
 		System.out.println("JOGO DE ADIVINHAÇÃO");
